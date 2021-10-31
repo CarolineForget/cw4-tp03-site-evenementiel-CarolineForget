@@ -1,0 +1,43 @@
+.hero {
+    height: 100vh;
+    background: url(./../assets/images/Hero/hero-principal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h5 {
+        margin: var(--spacing-xs) 0 var(--spacing-sm);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding-left: 5%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+}
+
+.hero--secondary {
+    height: 50vh;
+}
+
+.hero--invites_list {
+    background: url(./../assets/images/Hero/hero_02.jpg);
+}
+
+.hero--fiche_invite {
+    background: url(./../assets/images/Hero/hero_fredes.jpg);
+}

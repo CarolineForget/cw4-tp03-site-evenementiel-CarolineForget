@@ -1,0 +1,100 @@
+/* ==========================================================================
+   modal / components
+   ========================================================================== */
+
+.modal {
+    --modal-padding: 80px;
+
+    @include cover(fixed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: opacity 0.8s $ease-out-expo 0.4s, transform 0s 0.8s;
+    z-index: 20;
+
+    .modal-is-active & {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.8s $ease-out-expo, transform 0s;
+    }
+}
+
+.modal__scrim {
+    background-color: var(--color-black);
+    opacity: 0.8;
+    @include cover();
+}
+
+.modal__box {
+    color: var(--color-white);
+    width: 80vw;
+    position: relative;
+    height: 80vh;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s $ease-in-expo;
+
+    .modal-is-active & {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.4s $ease-out-expo;
+    }
+}
+
+.modal__content {
+    height: 100%;
+    padding: var(--modal-padding);
+    overflow-y: auto; //Scroll a l'int du modal
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content {
+        background-color: var(--color-bg-secondary);
+        padding: var(--spacing-md);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            text-align: left;
+        }
+    }
+}
+
+.modal__close {
+    cursor: pointer;
+
+    background: transparent;
+    border: none;
+    padding: var(--spacing-md);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+
+    svg {
+        stroke: var(--color-white);
+        transition: all 0.4s ease-in;
+    }
+
+    &:hover {
+        svg {
+            stroke: var(--color-button-hover);
+            fill: var(--color-white);
+        }
+    }
+}
+
+.modal-is-active body {
+    overflow: hidden;
+}

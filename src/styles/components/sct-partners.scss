@@ -1,0 +1,24 @@
+.sect-partners {
+    background-color: var(--color-bg-fifth);
+    padding: var(--spacing-sm) 0;
+}
+
+.grid--partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        margin: var(--spacing-lg) 0;
+        width: 45%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 12%;
+        }
+    }
+}

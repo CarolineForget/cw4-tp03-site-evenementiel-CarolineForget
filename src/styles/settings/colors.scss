@@ -1,0 +1,30 @@
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+:root {
+    // Couleur de base
+    --color-white: #fff;
+    --color-black: #000;
+
+    // Couleurs du projet
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-black);
+    --color-text-gradient: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #e6c87a 77.08%,
+        #deb852 100%
+    );
+
+    --color-button-primary: #deb852;
+    --color-button-hover: #806a2d;
+    --color-button-secondary: #007aff;
+    --color-button-tertiary: #48ff48;
+
+    --color-bg-primary: #080e18;
+    --color-bg-secondary: #202d43;
+    --color-bg-tertiary: #182232;
+    --color-bg-quaternary: #475a77;
+    --color-bg-fifth: #223046;
+}

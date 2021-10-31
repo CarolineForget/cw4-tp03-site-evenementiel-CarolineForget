@@ -1,0 +1,71 @@
+.en-vedette,
+.invites {
+    .swiper-slide {
+        margin: var(--spacing-md) 0;
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            background-color: var(--color-bg-secondary);
+            padding: var(--spacing-sm);
+            text-align: center;
+
+            p {
+                margin: 0;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.invites {
+    .swiper-container {
+        background-color: var(--color-bg-secondary);
+        padding: var(--spacing-sm);
+
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        position: relative;
+        height: 45vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+
+        .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 25vw;
+            background-position: center;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            height: 15vw;
+        }
+    }
+}
+
+.ne-pas-manquer {
+    .text--horaire {
+        display: flex;
+        justify-content: space-between;
+
+        background-color: var(--color-bg-secondary);
+        padding: var(--spacing-xs) var(--spacing-md);
+
+        p:nth-child(2) {
+            text-align: right;
+        }
+    }
+}

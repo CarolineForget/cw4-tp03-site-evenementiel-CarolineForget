@@ -1,0 +1,31 @@
+.title {
+    position: relative;
+    left: 10px;
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    h1 {
+        margin: var(--spacing-lg) 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin: var(--spacing-xl) 0;
+        }
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 5%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            left: 25vw;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            left: 30vw;
+        }
+    }
+}

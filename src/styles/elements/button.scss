@@ -1,0 +1,65 @@
+.button--primary {
+    background: var(--color-button-primary);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size-button);
+    font-weight: bold;
+
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-lg);
+
+    a {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background: var(--color-button-hover);
+        color: var(--color-button-primary);
+
+        a {
+            color: var(--color-button-primary);
+        }
+    }
+}
+
+.container--button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-apple,
+.button-google {
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size-content);
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-sm);
+
+    a {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background: var(--color-button-hover);
+
+        a {
+            color: var(--color-button-primary);
+        }
+    }
+}
+
+.button-apple {
+    background: var(--color-button-secondary);
+}
+
+.button-google {
+    background: var(--color-button-tertiary);
+}
+
+.button-isNotActive {
+    background-color: var(--color-button-hover);
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

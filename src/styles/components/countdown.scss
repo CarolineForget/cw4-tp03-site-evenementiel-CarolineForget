@@ -1,0 +1,33 @@
+.countdown {
+    background-color: var(--color-bg-fifth);
+    padding: var(--spacing-sm) 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            font-size: var(--font-size-content);
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        h1 {
+            background: -webkit-linear-gradient(#fff, #deb852);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 var(--spacing-xs);
+        }
+    }
+}
+
+.hero .countdown {
+    background: none;
+}

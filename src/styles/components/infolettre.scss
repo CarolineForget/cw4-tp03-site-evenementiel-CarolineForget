@@ -1,0 +1,26 @@
+.infolettre {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) var(--spacing-sm);
+    background-color: var(--color-bg-secondary);
+
+    .text {
+        text-align: center;
+
+        h4 {
+            margin: var(--spacing-md) 0;
+        }
+    }
+
+    .form__footer {
+        justify-content: center;
+        padding-bottom: 0;
+
+        .button--primary {
+            margin: 0;
+        }
+    }
+
+    .grid {
+        justify-content: center;
+    }
+}
